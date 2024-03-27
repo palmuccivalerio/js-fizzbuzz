@@ -2,19 +2,16 @@ const rowElem = document.querySelector(".row"); // object | null
 console.log(rowElem);
 
 for (let i = 1; i <= 100; i++) {
-    let bgClass= " ";
-
-
-
-    if (i % 3 === 0 && i % 5 === 0) {
+    let bgClass;
+   if (i % 3 === 0 && i % 5 === 0) {
         console.log("FizzBuzz");
         let bgClass = "Fizzbuzz";
     } else if (i % 3 === 0) {
         console.log("Fizz");
-        let bgClass = "Fizz"
+        let bgClass = "fizz"
     } else if (i % 5 === 0) {
         console.log("Buzz");
-        let bgClass = "Buzz";
+        let bgClass = "buzz";
     } else {
         console.log(i);
     }
